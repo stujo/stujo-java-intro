@@ -1,7 +1,9 @@
 # Summary
 
-* [Learning Objectives](learning_objectives/README.md)
-* [Checkpoints](checkpoints/README.md)
+* [About This Course](learning_objectives/README.md)
+   * [Overview](learning_objectives/about_this_course.md)
+   * [Learning Objectives](learning_objectives/learning_objectives.md)
+   * [Checkpoints](checkpoints/README.md)
 * [Set up for Java Development](set_up_for_java_development/README.md)
 * [Java Development Skills](java_development_skills/README.md)
 * [Java Platform Basics](java_platform_basics/README.md)
