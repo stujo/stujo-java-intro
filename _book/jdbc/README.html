@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>JDBC | 5 Day Java 6 Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../testing_with_junit4/README.html" />
+    
+    
+    <link rel="prev" href="../developer_skills/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="23" data-basepath=".." data-revision="1405615138167">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/null" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >5 Day Java 6 Introduction</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+
+        
+
+        
+
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="learning_objectives/README.html">
+            
+            <a href="../learning_objectives/README.html">
+                <i class="fa fa-check"></i> <b>1.</b> Learning Objectives
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="checkpoints/README.html">
+            
+            <a href="../checkpoints/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> Checkpoints
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="set_up_for_java_development/README.html">
+            
+            <a href="../set_up_for_java_development/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> Set up for Java Development
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="java_development_skills/README.html">
+            
+            <a href="../java_development_skills/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> Java Development Skills
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="java_platform_basics/README.html">
+            
+            <a href="../java_platform_basics/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> Java Platform Basics
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="java_build_tools_-_maven/README.html">
+            
+            <a href="../java_build_tools_-_maven/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> Java Build Tools - Maven
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="java_language_skills/README.html">
+            
+            <a href="../java_language_skills/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> Java Language Skills
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="chapter/README.html">
+            
+            <a href="../chapter/README.html">
+                <i class="fa fa-check"></i> <b>8.</b> TDD - Test Driven Development
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="self_study/README.html">
+            
+            <a href="../self_study/README.html">
+                <i class="fa fa-check"></i> <b>9.</b> Self Study
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="more_java_platform/README.html">
+            
+            <a href="../more_java_platform/README.html">
+                <i class="fa fa-check"></i> <b>10.</b> Java Platform Differences
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="eclipse_skills/README.html">
+            
+            <a href="../eclipse_skills/README.html">
+                <i class="fa fa-check"></i> <b>11.</b> Eclipse Skills
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="more_java_platform_classes/README.html">
+            
+            <a href="../more_java_platform_classes/README.html">
+                <i class="fa fa-check"></i> <b>12.</b> Numbers
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="object_oriented_coding/README.html">
+            
+            <a href="../object_oriented_coding/README.html">
+                <i class="fa fa-check"></i> <b>13.</b> Object Oriented Coding
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="exceptions/README.html">
+            
+            <a href="../exceptions/README.html">
+                <i class="fa fa-check"></i> <b>14.</b> Exceptions
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="exceptions/file_access.html">
+            
+            <a href="../exceptions/file_access.html">
+                <i class="fa fa-check"></i> <b>15.</b> File Access
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="stream_based_io/README.html">
+            
+            <a href="../stream_based_io/README.html">
+                <i class="fa fa-check"></i> <b>16.</b> Stream Based IO
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="sorting_and_searching/README.html">
+            
+            <a href="../sorting_and_searching/README.html">
+                <i class="fa fa-check"></i> <b>17.</b> Sorting and Searching
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="18" data-path="variable_scope/README.html">
+            
+            <a href="../variable_scope/README.html">
+                <i class="fa fa-check"></i> <b>18.</b> Variable Scope
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19" data-path="coding_generics/README.html">
+            
+            <a href="../coding_generics/README.html">
+                <i class="fa fa-check"></i> <b>19.</b> Coding Generics
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20" data-path="enums/README.html">
+            
+            <a href="../enums/README.html">
+                <i class="fa fa-check"></i> <b>20.</b> Enums
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="21" data-path="packages/README.html">
+            
+            <a href="../packages/README.html">
+                <i class="fa fa-check"></i> <b>21.</b> Packages
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22" data-path="developer_skills/README.html">
+            
+            <a href="../developer_skills/README.html">
+                <i class="fa fa-check"></i> <b>22.</b> Developer Skills
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="23" data-path="jdbc/README.html">
+            
+            <a href="../jdbc/README.html">
+                <i class="fa fa-check"></i> <b>23.</b> JDBC
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="24" data-path="testing_with_junit4/README.html">
+            
+            <a href="../testing_with_junit4/README.html">
+                <i class="fa fa-check"></i> <b>24.</b> Testing with JUnit4
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="25" data-path="final_project/README.html">
+            
+            <a href="../final_project/README.html">
+                <i class="fa fa-check"></i> <b>25.</b> Final Project
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="26" data-path="learning_objectives_review/README.html">
+            
+            <a href="../learning_objectives_review/README.html">
+                <i class="fa fa-check"></i> <b>26.</b> Learning Objectives Review
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="27" data-path="bonus_topics/README.html">
+            
+            <a href="../bonus_topics/README.html">
+                <i class="fa fa-check"></i> <b>27.</b> Bonus Topics
+            </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 85.18518518518519%;min-width: 81.48148148148148%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../learning_objectives/README.html" title="Learning Objectives" class="chapter done new-chapter" data-progress="1" style="left: 3.7037037037037037%;"></a>
+    
+        <a href="../checkpoints/README.html" title="Checkpoints" class="chapter done new-chapter" data-progress="2" style="left: 7.407407407407407%;"></a>
+    
+        <a href="../set_up_for_java_development/README.html" title="Set up for Java Development" class="chapter done new-chapter" data-progress="3" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../java_development_skills/README.html" title="Java Development Skills" class="chapter done new-chapter" data-progress="4" style="left: 14.814814814814815%;"></a>
+    
+        <a href="../java_platform_basics/README.html" title="Java Platform Basics" class="chapter done new-chapter" data-progress="5" style="left: 18.51851851851852%;"></a>
+    
+        <a href="../java_build_tools_-_maven/README.html" title="Java Build Tools - Maven" class="chapter done new-chapter" data-progress="6" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../java_language_skills/README.html" title="Java Language Skills" class="chapter done new-chapter" data-progress="7" style="left: 25.925925925925927%;"></a>
+    
+        <a href="../chapter/README.html" title="TDD - Test Driven Development" class="chapter done new-chapter" data-progress="8" style="left: 29.62962962962963%;"></a>
+    
+        <a href="../self_study/README.html" title="Self Study" class="chapter done new-chapter" data-progress="9" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../more_java_platform/README.html" title="Java Platform Differences" class="chapter done " data-progress="10" style="left: 37.03703703703704%;"></a>
+    
+        <a href="../eclipse_skills/README.html" title="Eclipse Skills" class="chapter done " data-progress="11" style="left: 40.74074074074074%;"></a>
+    
+        <a href="../more_java_platform_classes/README.html" title="Numbers" class="chapter done " data-progress="12" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../object_oriented_coding/README.html" title="Object Oriented Coding" class="chapter done " data-progress="13" style="left: 48.148148148148145%;"></a>
+    
+        <a href="../exceptions/README.html" title="Exceptions" class="chapter done " data-progress="14" style="left: 51.851851851851855%;"></a>
+    
+        <a href="../exceptions/file_access.html" title="File Access" class="chapter done " data-progress="15" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../stream_based_io/README.html" title="Stream Based IO" class="chapter done " data-progress="16" style="left: 59.25925925925926%;"></a>
+    
+        <a href="../sorting_and_searching/README.html" title="Sorting and Searching" class="chapter done " data-progress="17" style="left: 62.96296296296296%;"></a>
+    
+        <a href="../variable_scope/README.html" title="Variable Scope" class="chapter done " data-progress="18" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../coding_generics/README.html" title="Coding Generics" class="chapter done " data-progress="19" style="left: 70.37037037037037%;"></a>
+    
+        <a href="../enums/README.html" title="Enums" class="chapter done " data-progress="20" style="left: 74.07407407407408%;"></a>
+    
+        <a href="../packages/README.html" title="Packages" class="chapter done " data-progress="21" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../developer_skills/README.html" title="Developer Skills" class="chapter done " data-progress="22" style="left: 81.48148148148148%;"></a>
+    
+        <a href="../jdbc/README.html" title="JDBC" class="chapter done " data-progress="23" style="left: 85.18518518518519%;"></a>
+    
+        <a href="../testing_with_junit4/README.html" title="Testing with JUnit4" class="chapter  " data-progress="24" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../final_project/README.html" title="Final Project" class="chapter  " data-progress="25" style="left: 92.5925925925926%;"></a>
+    
+        <a href="../learning_objectives_review/README.html" title="Learning Objectives Review" class="chapter  " data-progress="26" style="left: 96.29629629629629%;"></a>
+    
+        <a href="../bonus_topics/README.html" title="Bonus Topics" class="chapter  " data-progress="27" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_313">
+                    
+                        <h1 id="jdbc">JDBC</h1>
+<h2 id="jdbc-connections-java-platform-">JDBC Connections (Java Platform)</h2>
+<ul>
+<li>Know how to connect your application to a database with JDBC
+*</li>
+<li>Know how to execute SQL statements:<ul>
+<li>CREATE TABLE, SELECT, INSERT, UPDATE, DELETE, DROP TABLE</li>
+</ul>
+</li>
+<li>autoCommit - Basic Transactions</li>
+<li>close <code>Connection</code> when done (if you opened it)</li>
+<li><a href="http://viralpatel.net/blogs/batch-insert-in-java-jdbc/" target="_blank">Batching Statements</a></li>
+</ul>
+<h2 id="exercise">Exercise</h2>
+<ul>
+<li><strong>EXERCISE:</strong></li>
+<li>A project which reads a CSV File from disk and imports some of the data into a database</li>
+<li><a href="http://docs.oracle.com/javase/6/docs/api/javax/sql/DataSource.html" target="_blank">DataSource</a></li>
+<li>When the file is imported a second time existing records are updated and new records are added</li>
+<li><a href="http://viralpatel.net/blogs/java-read-write-csv-file/" target="_blank">OpenCSV</a></li>
+<li><a href="http://mvnrepository.com/artifact/net.sf.opencsv/opencsv/2.3" target="_blank">Via Maven</a></li>
+<li>Get it working without batching first and then add batch queries</li>
+<li><strong>CHECKPOINT:</strong> Connect to a Database</li>
+<li><strong>CHECKPOINT:</strong> Query a Database</li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../developer_skills/README.html" class="navigation navigation-prev " aria-label="Previous page: Developer Skills"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../testing_with_junit4/README.html" class="navigation navigation-next " aria-label="Next page: Testing with JUnit4"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
