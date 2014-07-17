@@ -1,0 +1,1379 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Exceptions Review | 5 Day - JavaSE 6 Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="stujo">
+    
+    
+    <link rel="next" href="../exceptions/file_access.html" />
+    
+    
+    <link rel="prev" href="../exceptions/throwing_exceptions.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="stujo/stujo-java-intro" data-level="22.5" data-basepath=".." data-revision="1405623856392">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/stujo/stujo-java-intro" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/stujo/stujo-java-intro/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/stujo/stujo-java-intro/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >5 Day - JavaSE 6 Introduction</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/stujo" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/stujo/stujo-java-intro/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/stujo/stujo-java-intro/edit/master/exceptions/exceptions_review.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="learning_objectives/README.html">
+            
+            <a href="../learning_objectives/README.html">
+                <i class="fa fa-check"></i> <b>1.</b> About This Course
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="learning_objectives/about_this_course.html">
+            
+            <a href="../learning_objectives/about_this_course.html">
+                <i class="fa fa-check"></i> <b>1.1.</b> Overview
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="learning_objectives/learning_objectives.html">
+            
+            <a href="../learning_objectives/learning_objectives.html">
+                <i class="fa fa-check"></i> <b>1.2.</b> Learning Objectives
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="checkpoints/README.html">
+            
+            <a href="../checkpoints/README.html">
+                <i class="fa fa-check"></i> <b>1.3.</b> Checkpoints
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="set_up_for_java_development/README.html">
+            
+            <a href="../set_up_for_java_development/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> Set up for Java Development
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="java_development_skills/README.html">
+            
+            <a href="../java_development_skills/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> Java Development Skills
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="java_platform_basics/README.html">
+            
+            <a href="../java_platform_basics/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> Java Platform Basics
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="java_build_tools_-_maven/README.html">
+            
+            <a href="../java_build_tools_-_maven/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> Java Build Tools - Maven
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="java_language_skills/README.html">
+            
+            <a href="../java_language_skills/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> Java Language Skills
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="java_language_skills/class_methods.html">
+            
+            <a href="../java_language_skills/class_methods.html">
+                <i class="fa fa-check"></i> <b>6.1.</b> Class Methods Intro
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="java_language_skills/packages.html">
+            
+            <a href="../java_language_skills/packages.html">
+                <i class="fa fa-check"></i> <b>6.2.</b> Packages
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="java_language_skills/data_types.html">
+            
+            <a href="../java_language_skills/data_types.html">
+                <i class="fa fa-check"></i> <b>6.3.</b> Data Types
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="java_language_skills/local_variables.html">
+            
+            <a href="../java_language_skills/local_variables.html">
+                <i class="fa fa-check"></i> <b>6.4.</b> Local Variables
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="java_language_skills/printing_out_values.html">
+            
+            <a href="../java_language_skills/printing_out_values.html">
+                <i class="fa fa-check"></i> <b>6.5.</b> Printing Out Values
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="java_language_skills/expressions,_statements_and_blocks.html">
+            
+            <a href="../java_language_skills/expressions,_statements_and_blocks.html">
+                <i class="fa fa-check"></i> <b>6.6.</b> Expressions, Statements and Blocks
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="java_language_skills/operators.html">
+            
+            <a href="../java_language_skills/operators.html">
+                <i class="fa fa-check"></i> <b>6.7.</b> Operators
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="java_language_skills/comments.html">
+            
+            <a href="../java_language_skills/comments.html">
+                <i class="fa fa-check"></i> <b>6.8.</b> Comments
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="java_language_skills/random_number_generator.html">
+            
+            <a href="../java_language_skills/random_number_generator.html">
+                <i class="fa fa-check"></i> <b>6.9.</b> Random Number Generator
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="java_language_skills/control_flow.html">
+            
+            <a href="../java_language_skills/control_flow.html">
+                <i class="fa fa-check"></i> <b>7.</b> Branching Control Flow
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="java_language_skills/if_statement.html">
+            
+            <a href="../java_language_skills/if_statement.html">
+                <i class="fa fa-check"></i> <b>7.1.</b> if statement
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="java_language_skills/switch_statement.html">
+            
+            <a href="../java_language_skills/switch_statement.html">
+                <i class="fa fa-check"></i> <b>7.2.</b> switch statement
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="java_language_skills/arrays.html">
+            
+            <a href="../java_language_skills/arrays.html">
+                <i class="fa fa-check"></i> <b>8.</b> Arrays
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="java_language_skills/basic_arrays.html">
+            
+            <a href="../java_language_skills/basic_arrays.html">
+                <i class="fa fa-check"></i> <b>8.1.</b> Basic Arrays
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="java_language_skills/array_utilities.html">
+            
+            <a href="../java_language_skills/array_utilities.html">
+                <i class="fa fa-check"></i> <b>8.2.</b> Array Utilities
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="java_language_skills/command_line_arguments.html">
+            
+            <a href="../java_language_skills/command_line_arguments.html">
+                <i class="fa fa-check"></i> <b>8.3.</b> Command Line Arguments
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="loop_control_flow/README.html">
+            
+            <a href="../loop_control_flow/README.html">
+                <i class="fa fa-check"></i> <b>9.</b> Loop Control Flow
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="loop_control_flow/while_-_loop.html">
+            
+            <a href="../loop_control_flow/while_-_loop.html">
+                <i class="fa fa-check"></i> <b>9.1.</b> while - loop
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="loop_control_flow/for_-_loop.html">
+            
+            <a href="../loop_control_flow/for_-_loop.html">
+                <i class="fa fa-check"></i> <b>9.2.</b> for - loop
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="loop_control_flow/for_each_-_loop.html">
+            
+            <a href="../loop_control_flow/for_each_-_loop.html">
+                <i class="fa fa-check"></i> <b>9.3.</b> for each - loop
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="loop_control_flow/break_-_loop.html">
+            
+            <a href="../loop_control_flow/break_-_loop.html">
+                <i class="fa fa-check"></i> <b>9.4.</b> break - loop
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="loop_control_flow/continue_-_loop.html">
+            
+            <a href="../loop_control_flow/continue_-_loop.html">
+                <i class="fa fa-check"></i> <b>9.5.</b> continue - loop
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="chapter/strings.html">
+            
+            <a href="../chapter/strings.html">
+                <i class="fa fa-check"></i> <b>10.</b> Strings
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="chapter/methods.html">
+            
+            <a href="../chapter/methods.html">
+                <i class="fa fa-check"></i> <b>11.</b> Methods
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="chapter/returning_values.html">
+            
+            <a href="../chapter/returning_values.html">
+                <i class="fa fa-check"></i> <b>11.1.</b> Returning Values
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="chapter/method_names.html">
+            
+            <a href="../chapter/method_names.html">
+                <i class="fa fa-check"></i> <b>11.2.</b> Method Naming
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="chapter/passing_parameters.html">
+            
+            <a href="../chapter/passing_parameters.html">
+                <i class="fa fa-check"></i> <b>11.3.</b> Passing Parameters
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="chapter/class_methods.html">
+            
+            <a href="../chapter/class_methods.html">
+                <i class="fa fa-check"></i> <b>11.4.</b> Class Methods
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="chapter/instance_methods.html">
+            
+            <a href="../chapter/instance_methods.html">
+                <i class="fa fa-check"></i> <b>11.5.</b> Instance Methods
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="chapter/README.html">
+            
+            <a href="../chapter/README.html">
+                <i class="fa fa-check"></i> <b>12.</b> TDD - Test Driven Development
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="self_study/README.html">
+            
+            <a href="../self_study/README.html">
+                <i class="fa fa-check"></i> <b>13.</b> Self Study
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="more_java_platform/README.html">
+            
+            <a href="../more_java_platform/README.html">
+                <i class="fa fa-check"></i> <b>14.</b> Java Platform Differences
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="eclipse_skills/README.html">
+            
+            <a href="../eclipse_skills/README.html">
+                <i class="fa fa-check"></i> <b>15.</b> Eclipse Skills
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="15.1" data-path="eclipse_skills/basics.html">
+            
+            <a href="../eclipse_skills/basics.html">
+                <i class="fa fa-check"></i> <b>15.1.</b> Eclipse Projects
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.2" data-path="eclipse_skills/debugging.html">
+            
+            <a href="../eclipse_skills/debugging.html">
+                <i class="fa fa-check"></i> <b>15.2.</b> Debugging
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.3" data-path="eclipse_skills/formatting.html">
+            
+            <a href="../eclipse_skills/formatting.html">
+                <i class="fa fa-check"></i> <b>15.3.</b> Formatting
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.4" data-path="eclipse_skills/profiles.html">
+            
+            <a href="../eclipse_skills/profiles.html">
+                <i class="fa fa-check"></i> <b>15.4.</b> Profiles
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.5" data-path="eclipse_skills/source_tools.html">
+            
+            <a href="../eclipse_skills/source_tools.html">
+                <i class="fa fa-check"></i> <b>15.5.</b> Source Tools
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.6" data-path="eclipse_skills/refactoring.html">
+            
+            <a href="../eclipse_skills/refactoring.html">
+                <i class="fa fa-check"></i> <b>15.6.</b> Refactoring
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.7" data-path="eclipse_skills/code_coverage.html">
+            
+            <a href="../eclipse_skills/code_coverage.html">
+                <i class="fa fa-check"></i> <b>15.7.</b> Code Coverage
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.8" data-path="eclipse_skills/short_cuts.html">
+            
+            <a href="../eclipse_skills/short_cuts.html">
+                <i class="fa fa-check"></i> <b>15.8.</b> Short Cuts and Tips
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="more_java_platform_classes/README.html">
+            
+            <a href="../more_java_platform_classes/README.html">
+                <i class="fa fa-check"></i> <b>16.</b> Numbers
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="object_oriented_coding/README.html">
+            
+            <a href="../object_oriented_coding/README.html">
+                <i class="fa fa-check"></i> <b>17.</b> Object Oriented Principles
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="17.1" data-path="object_oriented_coding/oo_overview.html">
+            
+            <a href="../object_oriented_coding/oo_overview.html">
+                <i class="fa fa-check"></i> <b>17.1.</b> OO Overview
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17.2" data-path="object_oriented_coding/abstraction,_encapsulation_and_interfaces.html">
+            
+            <a href="../object_oriented_coding/abstraction,_encapsulation_and_interfaces.html">
+                <i class="fa fa-check"></i> <b>17.2.</b> Abstraction, Encapsulation and Interfaces
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17.3" data-path="object_oriented_coding/polymorphism.html">
+            
+            <a href="../object_oriented_coding/polymorphism.html">
+                <i class="fa fa-check"></i> <b>17.3.</b> Polymorphism
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17.4" data-path="object_oriented_coding/inheritance_and_classes.html">
+            
+            <a href="../object_oriented_coding/inheritance_and_classes.html">
+                <i class="fa fa-check"></i> <b>17.4.</b> Inheritance and Classes
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="18" data-path="object_oriented_coding/classes_and_objects.html">
+            
+            <a href="../object_oriented_coding/classes_and_objects.html">
+                <i class="fa fa-check"></i> <b>18.</b> Classes and Objects
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="18.1" data-path="object_oriented_coding/object_basics.html">
+            
+            <a href="../object_oriented_coding/object_basics.html">
+                <i class="fa fa-check"></i> <b>18.1.</b> Object Basics
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="18.2" data-path="object_oriented_coding/class_basics.html">
+            
+            <a href="../object_oriented_coding/class_basics.html">
+                <i class="fa fa-check"></i> <b>18.2.</b> Class Basics
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="19" data-path="object_oriented_coding/java_classes.html">
+            
+            <a href="../object_oriented_coding/java_classes.html">
+                <i class="fa fa-check"></i> <b>19.</b> Writing Java Classes
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="19.1" data-path="object_oriented_coding/class_definitions.html">
+            
+            <a href="../object_oriented_coding/class_definitions.html">
+                <i class="fa fa-check"></i> <b>19.1.</b> Class Definitions
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19.2" data-path="object_oriented_coding/object_equality.html">
+            
+            <a href="../object_oriented_coding/object_equality.html">
+                <i class="fa fa-check"></i> <b>19.2.</b> Object Equality
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19.3" data-path="object_oriented_coding/access_modifiers.html">
+            
+            <a href="../object_oriented_coding/access_modifiers.html">
+                <i class="fa fa-check"></i> <b>19.3.</b> Access Modifiers
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19.4" data-path="object_oriented_coding/inheritance_revisited.html">
+            
+            <a href="../object_oriented_coding/inheritance_revisited.html">
+                <i class="fa fa-check"></i> <b>19.4.</b> Inheritance Revisited
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19.5" data-path="object_oriented_coding/interfaces.html">
+            
+            <a href="../object_oriented_coding/interfaces.html">
+                <i class="fa fa-check"></i> <b>19.5.</b> Interfaces
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19.6" data-path="object_oriented_coding/abstract_classes.html">
+            
+            <a href="../object_oriented_coding/abstract_classes.html">
+                <i class="fa fa-check"></i> <b>19.6.</b> Abstract Classes
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="19.7" data-path="object_oriented_coding/class_review.html">
+            
+            <a href="../object_oriented_coding/class_review.html">
+                <i class="fa fa-check"></i> <b>19.7.</b> Classes Review
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="20" data-path="collections_framework/README.html">
+            
+            <a href="../collections_framework/README.html">
+                <i class="fa fa-check"></i> <b>20.</b> Collections Framework
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="20.1" data-path="collections_framework/collections_interfaces.html">
+            
+            <a href="../collections_framework/collections_interfaces.html">
+                <i class="fa fa-check"></i> <b>20.1.</b> Collections Interfaces
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20.2" data-path="collections_framework/collections_implementations.html">
+            
+            <a href="../collections_framework/collections_implementations.html">
+                <i class="fa fa-check"></i> <b>20.2.</b> Collections Implementations
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20.3" data-path="collections_framework/exposing_collections.html">
+            
+            <a href="../collections_framework/exposing_collections.html">
+                <i class="fa fa-check"></i> <b>20.3.</b> Exposing Collections
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="20.4" data-path="collections_framework/collections_review.html">
+            
+            <a href="../collections_framework/collections_review.html">
+                <i class="fa fa-check"></i> <b>20.4.</b> Collections Review
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="21" data-path="object_oriented_coding/generics.html">
+            
+            <a href="../object_oriented_coding/generics.html">
+                <i class="fa fa-check"></i> <b>21.</b> Generics
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22" data-path="exceptions/README.html">
+            
+            <a href="../exceptions/README.html">
+                <i class="fa fa-check"></i> <b>22.</b> Exceptions
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="22.1" data-path="exceptions/declaring_exceptions.html">
+            
+            <a href="../exceptions/declaring_exceptions.html">
+                <i class="fa fa-check"></i> <b>22.1.</b> Declaring Exceptions
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.2" data-path="exceptions/handling_exceptions.html">
+            
+            <a href="../exceptions/handling_exceptions.html">
+                <i class="fa fa-check"></i> <b>22.2.</b> Handling Exceptions
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.3" data-path="exceptions/try_-_catch_-_finally.html">
+            
+            <a href="../exceptions/try_-_catch_-_finally.html">
+                <i class="fa fa-check"></i> <b>22.3.</b> Try - Catch - Finally
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.4" data-path="exceptions/throwing_exceptions.html">
+            
+            <a href="../exceptions/throwing_exceptions.html">
+                <i class="fa fa-check"></i> <b>22.4.</b> Throwing Exceptions
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="22.5" data-path="exceptions/exceptions_review.html">
+            
+            <a href="../exceptions/exceptions_review.html">
+                <i class="fa fa-check"></i> <b>22.5.</b> Exceptions Review
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="23" data-path="exceptions/file_access.html">
+            
+            <a href="../exceptions/file_access.html">
+                <i class="fa fa-check"></i> <b>23.</b> File Access
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="24" data-path="stream_based_io/README.html">
+            
+            <a href="../stream_based_io/README.html">
+                <i class="fa fa-check"></i> <b>24.</b> Stream Based IO
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="25" data-path="sorting_and_searching/README.html">
+            
+            <a href="../sorting_and_searching/README.html">
+                <i class="fa fa-check"></i> <b>25.</b> Sorting and Searching
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="26" data-path="variable_scope/README.html">
+            
+            <a href="../variable_scope/README.html">
+                <i class="fa fa-check"></i> <b>26.</b> Variable Scope
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="27" data-path="coding_generics/README.html">
+            
+            <a href="../coding_generics/README.html">
+                <i class="fa fa-check"></i> <b>27.</b> Coding Generics
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="28" data-path="enums/README.html">
+            
+            <a href="../enums/README.html">
+                <i class="fa fa-check"></i> <b>28.</b> Enums
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="29" data-path="packages/README.html">
+            
+            <a href="../packages/README.html">
+                <i class="fa fa-check"></i> <b>29.</b> Packages
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="30" data-path="developer_skills/README.html">
+            
+            <a href="../developer_skills/README.html">
+                <i class="fa fa-check"></i> <b>30.</b> Developer Skills
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31" data-path="jdbc/README.html">
+            
+            <a href="../jdbc/README.html">
+                <i class="fa fa-check"></i> <b>31.</b> JDBC
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="31.1" data-path="jdbc/jdbc_connections.html">
+            
+            <a href="../jdbc/jdbc_connections.html">
+                <i class="fa fa-check"></i> <b>31.1.</b> JDBC Connections
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31.2" data-path="jdbc/jdbc_datasources.html">
+            
+            <a href="../jdbc/jdbc_datasources.html">
+                <i class="fa fa-check"></i> <b>31.2.</b> JDBC DataSources
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31.3" data-path="jdbc/executing_sql.html">
+            
+            <a href="../jdbc/executing_sql.html">
+                <i class="fa fa-check"></i> <b>31.3.</b> Executing SQL
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31.4" data-path="jdbc/resultsets.html">
+            
+            <a href="../jdbc/resultsets.html">
+                <i class="fa fa-check"></i> <b>31.4.</b> ResultSets
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31.5" data-path="jdbc/batching_sql_statements.html">
+            
+            <a href="../jdbc/batching_sql_statements.html">
+                <i class="fa fa-check"></i> <b>31.5.</b> Batching SQL Statements
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31.6" data-path="jdbc/basic_transactions.html">
+            
+            <a href="../jdbc/basic_transactions.html">
+                <i class="fa fa-check"></i> <b>31.6.</b> Basic Transactions
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="31.7" data-path="jdbc/jdbc_review.html">
+            
+            <a href="../jdbc/jdbc_review.html">
+                <i class="fa fa-check"></i> <b>31.7.</b> JDBC Review
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="32" data-path="testing_with_junit4/README.html">
+            
+            <a href="../testing_with_junit4/README.html">
+                <i class="fa fa-check"></i> <b>32.</b> Testing with JUnit4
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="33" data-path="final_project/README.html">
+            
+            <a href="../final_project/README.html">
+                <i class="fa fa-check"></i> <b>33.</b> Final Project
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="34" data-path="learning_objectives_review/README.html">
+            
+            <a href="../learning_objectives_review/README.html">
+                <i class="fa fa-check"></i> <b>34.</b> Learning Objectives Review
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="35" data-path="bonus_topics/README.html">
+            
+            <a href="../bonus_topics/README.html">
+                <i class="fa fa-check"></i> <b>35.</b> Bonus Topics
+            </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 79.79797979797979%;min-width: 78.78787878787878%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../learning_objectives/README.html" title="About This Course" class="chapter done new-chapter" data-progress="1" style="left: 1.0101010101010102%;"></a>
+    
+        <a href="../learning_objectives/about_this_course.html" title="Overview" class="chapter done " data-progress="1.1" style="left: 2.0202020202020203%;"></a>
+    
+        <a href="../learning_objectives/learning_objectives.html" title="Learning Objectives" class="chapter done " data-progress="1.2" style="left: 3.0303030303030303%;"></a>
+    
+        <a href="../checkpoints/README.html" title="Checkpoints" class="chapter done " data-progress="1.3" style="left: 4.040404040404041%;"></a>
+    
+        <a href="../set_up_for_java_development/README.html" title="Set up for Java Development" class="chapter done new-chapter" data-progress="2" style="left: 5.05050505050505%;"></a>
+    
+        <a href="../java_development_skills/README.html" title="Java Development Skills" class="chapter done new-chapter" data-progress="3" style="left: 6.0606060606060606%;"></a>
+    
+        <a href="../java_platform_basics/README.html" title="Java Platform Basics" class="chapter done new-chapter" data-progress="4" style="left: 7.070707070707071%;"></a>
+    
+        <a href="../java_build_tools_-_maven/README.html" title="Java Build Tools - Maven" class="chapter done new-chapter" data-progress="5" style="left: 8.080808080808081%;"></a>
+    
+        <a href="../java_language_skills/README.html" title="Java Language Skills" class="chapter done new-chapter" data-progress="6" style="left: 9.090909090909092%;"></a>
+    
+        <a href="../java_language_skills/class_methods.html" title="Class Methods Intro" class="chapter done " data-progress="6.1" style="left: 10.1010101010101%;"></a>
+    
+        <a href="../java_language_skills/packages.html" title="Packages" class="chapter done " data-progress="6.2" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../java_language_skills/data_types.html" title="Data Types" class="chapter done " data-progress="6.3" style="left: 12.121212121212121%;"></a>
+    
+        <a href="../java_language_skills/local_variables.html" title="Local Variables" class="chapter done " data-progress="6.4" style="left: 13.131313131313131%;"></a>
+    
+        <a href="../java_language_skills/printing_out_values.html" title="Printing Out Values" class="chapter done " data-progress="6.5" style="left: 14.141414141414142%;"></a>
+    
+        <a href="../java_language_skills/expressions,_statements_and_blocks.html" title="Expressions, Statements and Blocks" class="chapter done " data-progress="6.6" style="left: 15.151515151515152%;"></a>
+    
+        <a href="../java_language_skills/operators.html" title="Operators" class="chapter done " data-progress="6.7" style="left: 16.161616161616163%;"></a>
+    
+        <a href="../java_language_skills/comments.html" title="Comments" class="chapter done " data-progress="6.8" style="left: 17.171717171717173%;"></a>
+    
+        <a href="../java_language_skills/random_number_generator.html" title="Random Number Generator" class="chapter done " data-progress="6.9" style="left: 18.181818181818183%;"></a>
+    
+        <a href="../java_language_skills/control_flow.html" title="Branching Control Flow" class="chapter done new-chapter" data-progress="7" style="left: 19.19191919191919%;"></a>
+    
+        <a href="../java_language_skills/if_statement.html" title="if statement" class="chapter done " data-progress="7.1" style="left: 20.2020202020202%;"></a>
+    
+        <a href="../java_language_skills/switch_statement.html" title="switch statement" class="chapter done " data-progress="7.2" style="left: 21.21212121212121%;"></a>
+    
+        <a href="../java_language_skills/arrays.html" title="Arrays" class="chapter done new-chapter" data-progress="8" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../java_language_skills/basic_arrays.html" title="Basic Arrays" class="chapter done " data-progress="8.1" style="left: 23.232323232323232%;"></a>
+    
+        <a href="../java_language_skills/array_utilities.html" title="Array Utilities" class="chapter done " data-progress="8.2" style="left: 24.242424242424242%;"></a>
+    
+        <a href="../java_language_skills/command_line_arguments.html" title="Command Line Arguments" class="chapter done " data-progress="8.3" style="left: 25.252525252525253%;"></a>
+    
+        <a href="../loop_control_flow/README.html" title="Loop Control Flow" class="chapter done new-chapter" data-progress="9" style="left: 26.262626262626263%;"></a>
+    
+        <a href="../loop_control_flow/while_-_loop.html" title="while - loop" class="chapter done " data-progress="9.1" style="left: 27.272727272727273%;"></a>
+    
+        <a href="../loop_control_flow/for_-_loop.html" title="for - loop" class="chapter done " data-progress="9.2" style="left: 28.282828282828284%;"></a>
+    
+        <a href="../loop_control_flow/for_each_-_loop.html" title="for each - loop" class="chapter done " data-progress="9.3" style="left: 29.292929292929294%;"></a>
+    
+        <a href="../loop_control_flow/break_-_loop.html" title="break - loop" class="chapter done " data-progress="9.4" style="left: 30.303030303030305%;"></a>
+    
+        <a href="../loop_control_flow/continue_-_loop.html" title="continue - loop" class="chapter done " data-progress="9.5" style="left: 31.31313131313131%;"></a>
+    
+        <a href="../chapter/strings.html" title="Strings" class="chapter done " data-progress="10" style="left: 32.323232323232325%;"></a>
+    
+        <a href="../chapter/methods.html" title="Methods" class="chapter done " data-progress="11" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../chapter/returning_values.html" title="Returning Values" class="chapter done " data-progress="11.1" style="left: 34.343434343434346%;"></a>
+    
+        <a href="../chapter/method_names.html" title="Method Naming" class="chapter done " data-progress="11.2" style="left: 35.35353535353536%;"></a>
+    
+        <a href="../chapter/passing_parameters.html" title="Passing Parameters" class="chapter done " data-progress="11.3" style="left: 36.36363636363637%;"></a>
+    
+        <a href="../chapter/class_methods.html" title="Class Methods" class="chapter done " data-progress="11.4" style="left: 37.37373737373738%;"></a>
+    
+        <a href="../chapter/instance_methods.html" title="Instance Methods" class="chapter done " data-progress="11.5" style="left: 38.38383838383838%;"></a>
+    
+        <a href="../chapter/README.html" title="TDD - Test Driven Development" class="chapter done " data-progress="12" style="left: 39.39393939393939%;"></a>
+    
+        <a href="../self_study/README.html" title="Self Study" class="chapter done " data-progress="13" style="left: 40.4040404040404%;"></a>
+    
+        <a href="../more_java_platform/README.html" title="Java Platform Differences" class="chapter done " data-progress="14" style="left: 41.41414141414141%;"></a>
+    
+        <a href="../eclipse_skills/README.html" title="Eclipse Skills" class="chapter done " data-progress="15" style="left: 42.42424242424242%;"></a>
+    
+        <a href="../eclipse_skills/basics.html" title="Eclipse Projects" class="chapter done " data-progress="15.1" style="left: 43.43434343434343%;"></a>
+    
+        <a href="../eclipse_skills/debugging.html" title="Debugging" class="chapter done " data-progress="15.2" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../eclipse_skills/formatting.html" title="Formatting" class="chapter done " data-progress="15.3" style="left: 45.45454545454545%;"></a>
+    
+        <a href="../eclipse_skills/profiles.html" title="Profiles" class="chapter done " data-progress="15.4" style="left: 46.464646464646464%;"></a>
+    
+        <a href="../eclipse_skills/source_tools.html" title="Source Tools" class="chapter done " data-progress="15.5" style="left: 47.474747474747474%;"></a>
+    
+        <a href="../eclipse_skills/refactoring.html" title="Refactoring" class="chapter done " data-progress="15.6" style="left: 48.484848484848484%;"></a>
+    
+        <a href="../eclipse_skills/code_coverage.html" title="Code Coverage" class="chapter done " data-progress="15.7" style="left: 49.494949494949495%;"></a>
+    
+        <a href="../eclipse_skills/short_cuts.html" title="Short Cuts and Tips" class="chapter done " data-progress="15.8" style="left: 50.505050505050505%;"></a>
+    
+        <a href="../more_java_platform_classes/README.html" title="Numbers" class="chapter done " data-progress="16" style="left: 51.515151515151516%;"></a>
+    
+        <a href="../object_oriented_coding/README.html" title="Object Oriented Principles" class="chapter done " data-progress="17" style="left: 52.525252525252526%;"></a>
+    
+        <a href="../object_oriented_coding/oo_overview.html" title="OO Overview" class="chapter done " data-progress="17.1" style="left: 53.535353535353536%;"></a>
+    
+        <a href="../object_oriented_coding/abstraction,_encapsulation_and_interfaces.html" title="Abstraction, Encapsulation and Interfaces" class="chapter done " data-progress="17.2" style="left: 54.54545454545455%;"></a>
+    
+        <a href="../object_oriented_coding/polymorphism.html" title="Polymorphism" class="chapter done " data-progress="17.3" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../object_oriented_coding/inheritance_and_classes.html" title="Inheritance and Classes" class="chapter done " data-progress="17.4" style="left: 56.56565656565657%;"></a>
+    
+        <a href="../object_oriented_coding/classes_and_objects.html" title="Classes and Objects" class="chapter done " data-progress="18" style="left: 57.57575757575758%;"></a>
+    
+        <a href="../object_oriented_coding/object_basics.html" title="Object Basics" class="chapter done " data-progress="18.1" style="left: 58.58585858585859%;"></a>
+    
+        <a href="../object_oriented_coding/class_basics.html" title="Class Basics" class="chapter done " data-progress="18.2" style="left: 59.5959595959596%;"></a>
+    
+        <a href="../object_oriented_coding/java_classes.html" title="Writing Java Classes" class="chapter done " data-progress="19" style="left: 60.60606060606061%;"></a>
+    
+        <a href="../object_oriented_coding/class_definitions.html" title="Class Definitions" class="chapter done " data-progress="19.1" style="left: 61.61616161616162%;"></a>
+    
+        <a href="../object_oriented_coding/object_equality.html" title="Object Equality" class="chapter done " data-progress="19.2" style="left: 62.62626262626262%;"></a>
+    
+        <a href="../object_oriented_coding/access_modifiers.html" title="Access Modifiers" class="chapter done " data-progress="19.3" style="left: 63.63636363636363%;"></a>
+    
+        <a href="../object_oriented_coding/inheritance_revisited.html" title="Inheritance Revisited" class="chapter done " data-progress="19.4" style="left: 64.64646464646465%;"></a>
+    
+        <a href="../object_oriented_coding/interfaces.html" title="Interfaces" class="chapter done " data-progress="19.5" style="left: 65.65656565656566%;"></a>
+    
+        <a href="../object_oriented_coding/abstract_classes.html" title="Abstract Classes" class="chapter done " data-progress="19.6" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../object_oriented_coding/class_review.html" title="Classes Review" class="chapter done " data-progress="19.7" style="left: 67.67676767676768%;"></a>
+    
+        <a href="../collections_framework/README.html" title="Collections Framework" class="chapter done " data-progress="20" style="left: 68.68686868686869%;"></a>
+    
+        <a href="../collections_framework/collections_interfaces.html" title="Collections Interfaces" class="chapter done " data-progress="20.1" style="left: 69.6969696969697%;"></a>
+    
+        <a href="../collections_framework/collections_implementations.html" title="Collections Implementations" class="chapter done " data-progress="20.2" style="left: 70.70707070707071%;"></a>
+    
+        <a href="../collections_framework/exposing_collections.html" title="Exposing Collections" class="chapter done " data-progress="20.3" style="left: 71.71717171717172%;"></a>
+    
+        <a href="../collections_framework/collections_review.html" title="Collections Review" class="chapter done " data-progress="20.4" style="left: 72.72727272727273%;"></a>
+    
+        <a href="../object_oriented_coding/generics.html" title="Generics" class="chapter done " data-progress="21" style="left: 73.73737373737374%;"></a>
+    
+        <a href="../exceptions/README.html" title="Exceptions" class="chapter done " data-progress="22" style="left: 74.74747474747475%;"></a>
+    
+        <a href="../exceptions/declaring_exceptions.html" title="Declaring Exceptions" class="chapter done " data-progress="22.1" style="left: 75.75757575757575%;"></a>
+    
+        <a href="../exceptions/handling_exceptions.html" title="Handling Exceptions" class="chapter done " data-progress="22.2" style="left: 76.76767676767676%;"></a>
+    
+        <a href="../exceptions/try_-_catch_-_finally.html" title="Try - Catch - Finally" class="chapter done " data-progress="22.3" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../exceptions/throwing_exceptions.html" title="Throwing Exceptions" class="chapter done " data-progress="22.4" style="left: 78.78787878787878%;"></a>
+    
+        <a href="../exceptions/exceptions_review.html" title="Exceptions Review" class="chapter done " data-progress="22.5" style="left: 79.79797979797979%;"></a>
+    
+        <a href="../exceptions/file_access.html" title="File Access" class="chapter  " data-progress="23" style="left: 80.8080808080808%;"></a>
+    
+        <a href="../stream_based_io/README.html" title="Stream Based IO" class="chapter  " data-progress="24" style="left: 81.81818181818181%;"></a>
+    
+        <a href="../sorting_and_searching/README.html" title="Sorting and Searching" class="chapter  " data-progress="25" style="left: 82.82828282828282%;"></a>
+    
+        <a href="../variable_scope/README.html" title="Variable Scope" class="chapter  " data-progress="26" style="left: 83.83838383838383%;"></a>
+    
+        <a href="../coding_generics/README.html" title="Coding Generics" class="chapter  " data-progress="27" style="left: 84.84848484848484%;"></a>
+    
+        <a href="../enums/README.html" title="Enums" class="chapter  " data-progress="28" style="left: 85.85858585858585%;"></a>
+    
+        <a href="../packages/README.html" title="Packages" class="chapter  " data-progress="29" style="left: 86.86868686868686%;"></a>
+    
+        <a href="../developer_skills/README.html" title="Developer Skills" class="chapter  " data-progress="30" style="left: 87.87878787878788%;"></a>
+    
+        <a href="../jdbc/README.html" title="JDBC" class="chapter  " data-progress="31" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../jdbc/jdbc_connections.html" title="JDBC Connections" class="chapter  " data-progress="31.1" style="left: 89.8989898989899%;"></a>
+    
+        <a href="../jdbc/jdbc_datasources.html" title="JDBC DataSources" class="chapter  " data-progress="31.2" style="left: 90.9090909090909%;"></a>
+    
+        <a href="../jdbc/executing_sql.html" title="Executing SQL" class="chapter  " data-progress="31.3" style="left: 91.91919191919192%;"></a>
+    
+        <a href="../jdbc/resultsets.html" title="ResultSets" class="chapter  " data-progress="31.4" style="left: 92.92929292929293%;"></a>
+    
+        <a href="../jdbc/batching_sql_statements.html" title="Batching SQL Statements" class="chapter  " data-progress="31.5" style="left: 93.93939393939394%;"></a>
+    
+        <a href="../jdbc/basic_transactions.html" title="Basic Transactions" class="chapter  " data-progress="31.6" style="left: 94.94949494949495%;"></a>
+    
+        <a href="../jdbc/jdbc_review.html" title="JDBC Review" class="chapter  " data-progress="31.7" style="left: 95.95959595959596%;"></a>
+    
+        <a href="../testing_with_junit4/README.html" title="Testing with JUnit4" class="chapter  " data-progress="32" style="left: 96.96969696969697%;"></a>
+    
+        <a href="../final_project/README.html" title="Final Project" class="chapter  " data-progress="33" style="left: 97.97979797979798%;"></a>
+    
+        <a href="../learning_objectives_review/README.html" title="Learning Objectives Review" class="chapter  " data-progress="34" style="left: 98.98989898989899%;"></a>
+    
+        <a href="../bonus_topics/README.html" title="Bonus Topics" class="chapter  " data-progress="35" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_3045">
+                    
+                        <h1 id="exceptions-review">Exceptions Review</h1>
+<h3 id="exercise">Exercise</h3>
+<ul>
+<li><strong>EXERCISE:</strong> Catch Exception - Create and catch an <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ArrayIndexOutOfBoundsException.html" target="_blank"><code>ArrayIndexOutOfBoundsException.html</code></a></li>
+<li><strong>EXERCISE:</strong> Throw Exception - Example Check for null and throw a NullPointerException, document it</li>
+</ul>
+<h3 id="checkpoint">Checkpoint</h3>
+<ul>
+<li><strong>CHECKPOINT:</strong> Exception Handling</li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../exceptions/throwing_exceptions.html" class="navigation navigation-prev " aria-label="Previous page: Throwing Exceptions"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../exceptions/file_access.html" class="navigation navigation-next " aria-label="Next page: File Access"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

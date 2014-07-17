@@ -3,6 +3,27 @@
 * [Maven?](http://stackoverflow.com/questions/1074869/find-oracle-jdbc-driver-in-maven-repository#1074971)
 * [System Dependency](http://stackoverflow.com/questions/1074869/find-oracle-jdbc-driver-in-maven-repository#9779295)
 * [Get Drivers](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
+* Loading the Driver
+
+```
+try {
+   Class.forName("oracle.jdbc.driver.OracleDriver");
+}
+catch(ClassNotFoundException ex) {
+   System.out.println("Oracle JDBC Driver Unavailable");
+   System.exit(1);
+}
+```
+
+* Getting the Connection
+
+```
+String URL = "jdbc:oracle:thin:@hostname:port Number:databaseName";
+String USER = "scott";
+String PASS = "tiger"
+Connection connection = DriverManager.getConnection(URL, USER, PASS);
+```
+
 
 ##(Bonus)Enumerations
 * [Enumerations](http://docs.oracle.com/javase/6/docs/api/java/util/StringTokenizer.html) (StringTokenizer)
@@ -24,6 +45,9 @@
 ##(Bonus)BigDecimal
 * [BigDecimal](http://docs.oracle.com/javase/6/docs/api/java/math/BigDecimal.html)
 * [Usage](http://www.javaworld.com/article/2075315/core-java/make-cents-with-bigdecimal.html)
+
+##(Bonus)Properties
+* Demo boxes/checkout
 
 ##(Bonus)Locales i18n
 * Demo boxes/externalstrings
