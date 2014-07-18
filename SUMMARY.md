@@ -87,6 +87,7 @@
 * [Enums](enums/README.md)
 * [Packages](packages/README.md)
 * [Developer Skills](developer_skills/README.md)
+* [Maven By Example](developer_skills/maven_by_example.md)
 * [JDBC](jdbc/README.md)
    * [JDBC Connections](jdbc/jdbc_connections.md)
    * [JDBC DataSources](jdbc/jdbc_datasources.md)
