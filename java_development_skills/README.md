@@ -1,4 +1,15 @@
 # Java Development Skills
+
+* Java is an programming language based on the object oriented principles of:
+  * P Polymorphism
+  * I Inheritance
+  * E Encapsulation
+
+* Would you like some PIE?
+
+* Unlike most compiled languages, the compiler (``javac``) produces __bytecode__ instead of __binary files__. This allows the same code to run on multiple platforms, with platform specific ``JVM``s __Java Virtual Machines__
+
+
 * Explain the Java Development Workflow
  * ``.java`` File
  * ``javac``

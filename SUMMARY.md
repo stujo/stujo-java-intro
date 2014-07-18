@@ -21,6 +21,7 @@
 * [Branching Control Flow](control_flow/README.md)
    * [if statement](control_flow/if_statement.md)
    * [switch statement](control_flow/switch_statement.md)
+* [Chapter 1 Review](chapter_1_review/README.md)
 * [Arrays](arrays/README.md)
    * [Basic Arrays](arrays/basic_arrays.md)
    * [Array Utilities](arrays/array_utilities.md)
