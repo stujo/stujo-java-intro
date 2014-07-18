@@ -1,1 +1,10 @@
-{}
+{
+ // Global configuration for plugins
+    "pluginsConfig": {
+        "fontSettings": {
+            "theme": "sepia",
+            "family": "sans",
+            "size": 1 
+        }
+    }
+}
