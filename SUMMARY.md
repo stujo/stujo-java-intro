@@ -34,6 +34,7 @@
    * [for each - loop](loop_control_flow/for_each_-_loop.md)
    * [break - loop](loop_control_flow/break_-_loop.md)
    * [continue - loop](loop_control_flow/continue_-_loop.md)
+* [Chapter 3 Review](chapter_3_review/README.md)
 * [Strings](strings/README.md)
 * [Methods](methods/README.md)
    * [Returning Values](methods/returning_values.md)
