@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="stujo/stujo-java-intro" data-level="33.10" data-basepath=".." data-revision="1405683134090">
+    <div class="book" data-github="stujo/stujo-java-intro" data-level="33.10" data-basepath=".." data-revision="1405684100528">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2103,18 +2103,38 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_64">
+                    <section class="normal" id="section-gitbook_896">
                     
                         <h1 id="jdbc-review">JDBC Review</h1>
 <h3 id="exercise">Exercise</h3>
 <ul>
 <li><strong>EXERCISE:</strong></li>
-<li>A project which reads a CSV File from disk and imports some of the data into a database</li>
-<li><a href="http://docs.oracle.com/javase/6/docs/api/javax/sql/DataSource.html" target="_blank">DataSource</a></li>
-<li>When the file is imported a second time existing records are updated and new records are added</li>
-<li><a href="http://viralpatel.net/blogs/java-read-write-csv-file/" target="_blank">OpenCSV</a></li>
+<li>A project which reads a CSV File from disk and imports some of the data into a sqlite database</li>
+<li>Use Maven to get the driver<pre><code>      &lt;dependency&gt;
+          &lt;groupId&gt;org.xerial&lt;/groupId&gt;
+          &lt;artifactId&gt;sqlite-jdbc&lt;/artifactId&gt;
+          &lt;version&gt;3.7.15-M1&lt;/version&gt;
+          &lt;scope&gt;compile&lt;/scope&gt;
+      &lt;/dependency&gt;
+</code></pre></li>
+<li><p><a href="https://github.com/boundlessgeo/sqlite-jdbc" target="_blank">https://github.com/boundlessgeo/sqlite-jdbc</a></p>
+</li>
+<li><p>Example Source Data is Auto Dealership Listings:</p>
+</li>
+</ul>
+<pre><code>Year,Make,Model,Description,Price
+</code></pre><ul>
+<li><a href="http://en.wikipedia.org/wiki/Comma-separated_values#Example" target="_blank">Source Data</a></li>
+</ul>
+<ul>
+<li><p><a href="http://viralpatel.net/blogs/java-read-write-csv-file/" target="_blank">OpenCSV</a></p>
+<ul>
 <li><a href="http://mvnrepository.com/artifact/net.sf.opencsv/opencsv/2.3" target="_blank">Via Maven</a></li>
-<li>Get it working without batching first and then add batch queries</li>
+</ul>
+</li>
+<li><p><strong>BONUS:</strong> Get it working without batching first and then add batch queries</p>
+</li>
+<li><strong>BONUS:</strong> When the file is imported a second time existing records are updated and new records are added</li>
 <li><strong>CHECKPOINT:</strong> Connect to a Database</li>
 <li><strong>CHECKPOINT:</strong> Query a Database</li>
 </ul>
@@ -2153,7 +2173,7 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {};
+    var config = {"fontSettings":{"theme":"white","family":"sans","size":1}};
     gitbook.start(config);
 });
 </script>
