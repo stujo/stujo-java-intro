@@ -71,6 +71,8 @@
    * [Interfaces](writing_java_classes/interfaces.md)
    * [Abstract Classes](writing_java_classes/abstract_classes.md)
    * [Classes Review](writing_java_classes/class_review.md)
+* [Chapter 4 Review](chapter_4_review/README.md)
+* [Chapter 5 Review](chapter_5_review/README.md)
 * [Collections Framework](collections_framework/README.md)
    * [Collections Interfaces](collections_framework/collections_interfaces.md)
    * [Collections Implementations](collections_framework/collections_implementations.md)

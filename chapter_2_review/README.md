@@ -1,3 +1,3 @@
 # Chapter 2 Review
 
-* Self Test on text book (p60)
+* Self Test in text book (p60)
