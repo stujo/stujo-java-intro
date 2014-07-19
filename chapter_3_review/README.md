@@ -1,7 +1,7 @@
 # Chapter 3 Review
 
 
-__Note:__ Potential problem with example in book (on UNIX):
+__Note:__ Potential problem with example in book (at least on UNIX):
 
 ```
 package com.skillbox.boxes.basics;

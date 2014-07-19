@@ -10,6 +10,7 @@
  * Learning how to find answers is key
 * Each Java Topic
  * No Slides
+ * Shared notepad Page (TBD)
  * Chat and Code Demo - Ask Questions!
  * Do - Pretend I'm the PdM
  * Review Volunteer Together
