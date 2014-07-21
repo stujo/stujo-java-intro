@@ -97,6 +97,7 @@
 * [Coding Generics](coding_generics/README.md)
 * [Developer Skills](developer_skills/README.md)
 * [Testing with JUnit4](testing_with_junit4/README.md)
+   * [Mockito Examples](testing_with_junit4/mockito_examples.md)
 * [Maven By Example](maven_by_example/README.md)
 * [JDBC](jdbc/README.md)
    * [JDBC Connections](jdbc/jdbc_connections.md)
