@@ -11,7 +11,8 @@ int[] anArray = {
 };
 ```
 * ``array.length``
-* ``System.arraycopy()``
+* [``System.arraycopy()``](http://docs.oracle.com/javase/6/docs/api/java/lang/System.html#arraycopy%28java.lang.Object, int, java.lang.Object, int, int%29)
+
 
 ###Exercise
 * __EXERCISE:__ Re-write the ``LuckyDay`` application to use an array
