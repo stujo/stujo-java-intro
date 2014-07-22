@@ -7,7 +7,7 @@ Enough hard coding! Let's read in some arguments
 * How can we access args?
 
 ###Exercise
-* __EXERCISE:__ Write a simple application in ``sorter`` which takes multiple command line arguments, puts them into an array, sorts the array and prints out the sorted array
+* __EXERCISE:__ Write a simple application in ``sorter`` which takes multiple command line arguments as ``String``s, puts them into an array, sorts the array and prints out the sorted array
 
 ###Checkpoint
 * __CHECKPOINT:__ Arrays
