@@ -100,6 +100,7 @@
 * [Variable Scope](variable_scope/README.md)
 * [Coding Generics](coding_generics/README.md)
 * [Enums](enums/README.md)
+* [Dates and Calendars](dates_and_calendars/README.md)
 * [Chapter 12 Review](chapter_12_review/README)
 * [Developer Skills](developer_skills/README.md)
 * [Testing with JUnit4](testing_with_junit4/README.md)

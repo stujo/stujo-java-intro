@@ -7,4 +7,4 @@
 * ``clone`` - ``Cloneable`` Marker interface
 * [``hashCode`` and ``equals`` contract](http://www.ibm.com/developerworks/library/j-jtp05273/)
 
-* __LIVE DEMO:__ Using ``String`` as an example
+* __LIVE DEMO:__ Using ``String`` or ``Shape`` as an example

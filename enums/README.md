@@ -5,4 +5,4 @@
 * ``.values()`` ``for each``
 * ``switch``
 * ``toString``
-* __EXERCISE:__  Recode the LuckyDay app using a ``DayOfWeek`` Enum and the ``values()`` array
+* __EXERCISE:__  Recode the ``Shape`` app using a ``ShapeColor`` Enum

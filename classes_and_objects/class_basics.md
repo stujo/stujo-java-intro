@@ -5,4 +5,4 @@
 * ``getClassLoader()``
 * ``Class.forName()`` -> ``Class``
 
-* __LIVE DEMO:__ Using ``String.getClass`` as an example
+* __LIVE DEMO:__ Using ``string.getClass`` or ``shape.getClass`` as an example

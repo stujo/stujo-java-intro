@@ -15,7 +15,9 @@
  * non-``static``
 
 ###Exercise
-* __EXERCISE:__  Implement the basics of your classes from the previous exercise.
+* __EXERCISE:__  Add a ``String mName`` field the ``Shape`` class and make sure the value is passed from the subclass constructors to the ``Shape`` base class
+
+
 
 ###Checkpoint
 * __CHECKPOINT:__ Constructors
