@@ -1,9 +1,10 @@
 # Inheritance and Classes
 
-* What would a possible hierarchy be for Shape instead of using the mType field?
+###Discussion###
+* __DISCUSS:__ What would a possible hierarchy be for Shape instead of using the mType field?
 
 ###Exercise
-* Implement the Shape hierarchy discussed
+* __EXERCISE:__ Implement the Shape hierarchy discussed
 
 ###Bonus Exercise (if we have time)
 * Not coding, just on paper

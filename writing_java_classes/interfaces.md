@@ -6,24 +6,27 @@
 * Interfaces are entirely abstract but can contain constants
 
 ###Exercise
-* __EXERCISE:__ ``NamedSurface`` as ``interface`` have ``Shape`` implement ``NamedSurface``
+* __EXERCISE:__ ``LineArt`` as ``interface`` have ``Shape`` implement ``LineArt``
 
 ```
-interface NamedSurface
+interface LineArt
 {
-   String getName();
-   double getArea();
+   double getPerimeter();
 }
 ```
 
 * See the errors you get and adjust your classes to fix them
 
-* __BONUS EXERCISE:__ Write a class method on your App which takes and array of NamedSurfaces and returns the longest name
+* __BONUS EXERCISE:__ Write a class method on your App which takes and array of ``LineArt``s and returns the total sum of all perimeters as an indication of how much ink a plotter would use to draw them.
 
 ```
-static String getLongestName(NamedSurface[] namedObjects)
+static double getInkUsage(LineArt[] drawables)
 {
-   ...
+   double totalLineLength = 0.0;
+
+   // ... sum up the values
+
+   return totalLineLength;
 }
 
 ```
