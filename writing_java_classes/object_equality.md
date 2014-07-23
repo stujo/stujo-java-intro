@@ -5,7 +5,8 @@
 * [``equals``](http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#equals%28java.lang.Object%29) and [``hashCode``](http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode%28%29)
 
 ###Exercise
-* __EXERCISE:__ Try and implement ``equals`` and ``hashCode`` according to the documentation provided
+* __EXERCISE:__ Create a new class ``LineType`` with the fields: ``int`` ``mWidth`` and ``boolean`` ``mDashed``
+* Try and implement ``equals`` and ``hashCode`` according to the documentation provided
 
 * __BONUS EXERCISE:__ Write some ``@Test``s for your ``equals`` code
 

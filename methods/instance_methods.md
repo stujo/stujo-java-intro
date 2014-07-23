@@ -15,7 +15,7 @@ class Shape
 }
 ```
 
-* __EXERCISE:__ Use ``mvn archetype:generate`` and select ``maven-archetype-quickstart`` to generate and app template with the artifact id of 'shapes'. In your application write a ``Shape`` class and create three instances, a circle, a square and an equilateral triangle.
+* __EXERCISE:__ Use ``mvn archetype:generate`` and select ``maven-archetype-quickstart`` to generate and app template with the artifact id of 'shapes'. In your application write a ``Shape`` class, with the fields above. Add 'getters and setters' and create three instances, a circle, a square and an equilateral triangle.
 * Call the area, type and toString methods and print out the results
 
 * __EXERCISE:__ Add a Test!
