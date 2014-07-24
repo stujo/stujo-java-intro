@@ -1,6 +1,8 @@
 
 # Iterator and Iterable
 
+* The for each construct works on Collections because they implement Iterable
+
 ```
 public interface Iterable
 {
