@@ -79,6 +79,7 @@
    * [Collections Review](collections_framework/collections_review.md)
 * [Generics](generics/README.md)
 * [Exceptions](exceptions/README.md)
+   * [Ensuring things Happen](exceptions/ensuring_things_happen.md)
    * [Declaring Exceptions](exceptions/declaring_exceptions.md)
    * [Handling Exceptions](exceptions/handling_exceptions.md)
    * [Try - Catch - Finally](exceptions/try_-_catch_-_finally.md)
