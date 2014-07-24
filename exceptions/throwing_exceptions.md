@@ -11,3 +11,5 @@
   * Not for control flow
 
 * [Throwing Exceptions](http://docs.oracle.com/javase/tutorial/essential/exceptions/throwing.html)
+
+* [Creating Exception Classes](http://docs.oracle.com/javase/tutorial/essential/exceptions/creating.html)
