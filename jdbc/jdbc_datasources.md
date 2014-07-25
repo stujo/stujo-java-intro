@@ -1,7 +1,8 @@
 # JDBC DataSources
 
-* Application often run in containers which have configured ``DataSource``s so this is most commmon, but you can create your own:
-* How to connect your application to a database via a ``DataSource``
+* Application often run in containers which have configured ``DataSource``s so this is most commmon, but you can configure your own
+
+* SQLite Example:
 
 Example from __boxes/checkout__
 ```

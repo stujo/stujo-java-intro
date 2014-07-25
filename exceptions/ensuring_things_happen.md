@@ -50,3 +50,27 @@ public class App {
 
 
 ```
+
+###EXERCISE
+
+* __Exercise__: Write some code that causes a NullPointerException
+* Surround that code in a ``try`` block
+* Add a ``finally`` block
+
+
+* __Example__:
+
+```
+	try {
+		System.out.println("TRYING!");
+		String strNull = null;
+		strNull.lastIndexOf("HelloWorld");
+		System.out.println("SUCCEEDED!");
+	} finally {
+		System.out.println("FINALLY!");
+	}
+```
+
+
+
+

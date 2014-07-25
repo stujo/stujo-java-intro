@@ -8,6 +8,13 @@
  * Use ``try`` and ``finally`` to close streams when done
  * Notices that the streams are declared and initialized to ``null`` outside of the ``try`` and ``null`` is tested in the ``finally`` block
 
+ * Appending:
+
+```
+FileWriter fw = new FileWriter("filename.txt", true);
+```
+
+
 ##Canonical Example: File Byte Stream (Java Platform)
 
 ```
