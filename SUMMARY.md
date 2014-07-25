@@ -111,6 +111,8 @@
    * [Mock and Stubs](testing_with_junit4/mock_and_stubs.md)
    * [Mockito Examples](testing_with_junit4/mockito_examples.md)
 * [Maven By Example](maven_by_example/README.md)
+   * [Self Executing Jar](maven_by_example/self_executing_jar.md)
+   * [Article](maven_by_example/article)
 * [JDBC](jdbc/README.md)
    * [JDBC Connections](jdbc/jdbc_connections.md)
    * [JDBC DataSources](jdbc/jdbc_datasources.md)
