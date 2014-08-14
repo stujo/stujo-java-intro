@@ -1,5 +1,10 @@
 # Mock and Stubs
 
+* [Doubles / Mocks / Stubs](http://adamcod.es/2014/05/15/test-doubles-mock-vs-stub.html)
+
+* [Mocks Aren't Stubs](http://martinfowler.com/articles/mocksArentStubs.html)
+
+
 * Choose a Mock Framework
  * [Mockito](http://mockito.org/)
  * [EasyMock](http://easymock.org/)
