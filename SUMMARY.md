@@ -127,6 +127,7 @@
 * [Final Project](final_project/README.md)
 * [Learning Objectives Review](learning_objectives_review/README.md)
 * [Bonus Topics](bonus_topics/README.md)
+   * [Maven Exec](bonus_topics/maven_exec.md)
    * [Oracle via JDBC](bonus_topics/oracle_via_jdbc.md)
    * [Enumerations](bonus_topics/enumerations.md)
    * [Annotations](bonus_topics/annotations.md)
@@ -147,4 +148,7 @@
    * [Garbage Collection Options](bonus_topics/garbage_collection_options.md)
    * [Applets](bonus_topics/applets.md)
    * [NIO/IO Java 7](bonus_topics/nioio_java_7.md)
+   * [Java 7 SE Changes](bonus_topics/java_7_se_changes.md)
+   * [JDK 8 Updates](bonus_topics/jdk_8_updates.md)
+   * [JDBC 3 vs JDBC 4](bonus_topics/jdbc_3_vs_jdbc_4.md)
 

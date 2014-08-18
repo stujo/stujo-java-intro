@@ -14,4 +14,4 @@ Enough hard coding! Let's read in some arguments
 
 ###Converting Values
 * __DEMO:__ Parsing Strings into primitive Types
-* __EXERCISE:__ Write a simple application in ``cladder`` which takes two command line arguments, checks that they are present, converts them into double values, multiplies them together and prints out the answer to two decimal places.
+* __EXERCISE:__ Write a simple application in ``cladder`` which takes two command line arguments, checks that they are present, converts them into double values, adds them together and prints out the answer to two decimal places.
