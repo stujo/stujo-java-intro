@@ -22,3 +22,9 @@
 
 * __Note:__ Java 7 has binary literals too
   * byte fourTimesThree = 0b1100;
+* __Note:__ To see the binary:
+```
+int x = 100;
+System.out.println(Integer.toBinaryString(x));
+```
+
