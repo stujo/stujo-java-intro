@@ -1,7 +1,7 @@
 C# Chapter 3 Review
 
 
-__Note:__ Potential problem with example in book (at least on UNIX):
+__Note:__ Potential problem with example in book, the InputStream for STDIN is buffered :
 
 ```
 package com.skillbox.boxes.basics;
