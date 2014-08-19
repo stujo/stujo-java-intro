@@ -16,3 +16,8 @@
 * __EXERCISE:__ Use StringBuilder to create a string by concatenating random values from an array
 
 
+* __EXTRA:__
+  * [Code Points](http://mindprod.com/jgloss/codepoint.html)
+  * [More on Code Points](http://www.ibm.com/developerworks/java/library/j-unicode/index.html?ca=dat)
+
+
