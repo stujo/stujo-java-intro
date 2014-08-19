@@ -21,3 +21,10 @@
   * [More on Code Points](http://www.ibm.com/developerworks/java/library/j-unicode/index.html?ca=dat)
 
 
+###Exercise
+* __EXERCISE:__ Try these on the concatentated ``String``
+* ``substring``
+* ``length``
+
+* [CharSequence](http://docs.oracle.com/javase/7/docs/api/java/lang/CharSequence.html)
+* ``subSequence``
