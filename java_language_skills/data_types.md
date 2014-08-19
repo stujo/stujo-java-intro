@@ -20,11 +20,19 @@
   * 0xff is hex
   * 'c' != "c"
 
+* Formatting using PrintStream.format
+  * [Formatter Syntax](http://docs.oracle.com/javase/6/docs/api/java/util/Formatter.html#syntax)
+
+
 * __Note:__ Java 7 has binary literals too
   * byte fourTimesThree = 0b1100;
+
 * __Note:__ To see the binary:
 ```
 int x = 100;
 System.out.println(Integer.toBinaryString(x));
 ```
+
+* __Note:__ When we use printf we are actually converting the raw datatypes to objects using autoboxing, but you probably didn't notice and you don't know about this yet :)
+
 
