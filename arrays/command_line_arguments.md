@@ -7,11 +7,11 @@ Enough hard coding! Let's read in some arguments
 * How can we access args?
 
 ###Exercise
-* __EXERCISE:__ Write a simple application in ``sorter`` which takes multiple command line arguments as ``String``s, puts them into an array, sorts the array and prints out the sorted array
+* __EXERCISE:__ Write a simple application called ``StringSorter`` which takes multiple command line arguments as ``String``s, puts them into an array, sorts the array and prints out the sorted array
 
 ###Checkpoint
 * __CHECKPOINT:__ Arrays
 
 ###Converting Values
 * __DEMO:__ Parsing Strings into primitive Types
-* __EXERCISE:__ Write a simple application in ``cladder`` which takes two command line arguments, checks that they are present, converts them into double values, adds them together and prints out the answer to two decimal places.
+* __EXERCISE:__ Write a simple application called ``Cladder`` which takes two command line arguments, checks that they are present, converts them into double values, adds them together and prints out the answer to two decimal places.
